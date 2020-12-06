@@ -1,0 +1,36 @@
+.nav {
+  margin-left: 93px;
+}
+
+.header .link {
+  display: block;
+  padding: 32px 0px;
+  position: relative;
+  color: $title-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.header .list-item:not(:first-child) {
+  margin-left: 50px;
+}
+.nav .current {
+  color: $accent-color;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}

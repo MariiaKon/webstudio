@@ -1,0 +1,18 @@
+.header-contacts .link {
+  display: flex;
+  color: $text-color;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.mail-icon,
+.tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

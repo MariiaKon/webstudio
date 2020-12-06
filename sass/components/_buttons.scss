@@ -1,0 +1,109 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 50px;
+
+  border: 0;
+  border-radius: 4px;
+  background-color: $accent-color;
+  color: $bg-primary-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  outline: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $accent-color;
+    background-color: $bg-primary-color;
+  }
+}
+
+.order {
+  padding: 10px 32px;
+}
+.subscribe {
+  padding: 10px 29px;
+  margin-left: 12px;
+  margin-top: 20px;
+}
+.subscribe-btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  margin-left: 10px;
+}
+.submit-modal {
+  padding: 10px 55px;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #0f79cf;
+    color: $bg-primary-color;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border-radius: 50%;
+  border: $border rgba(0, 0, 0, 0.1);
+  background: $bg-primary-color;
+
+  &:hover .close-btn-icon,
+  &:focus .close-btn-icon,
+  &:active .close-btn-icon {
+    fill: $accent-color;
+  }
+}
+.close-btn-icon {
+  fill: $title-color;
+  width: 25px;
+  height: 25px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+}
+
+.filter-btn {
+  min-width: 100%;
+  min-height: 38px;
+  padding: 6px 22px;
+
+  background-color: $bg-secondary-color;
+  color: $title-color;
+  box-shadow: none;
+  font-weight: 500;
+  line-height: 1.62;
+  outline: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $bg-primary-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}

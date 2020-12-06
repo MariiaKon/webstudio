@@ -1,0 +1,38 @@
+.manufacture-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+.manufacture .list-item:not(:first-child) {
+  margin-left: 30px;
+}
+.manufacture-card {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+.manufacture-overlay {
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $overlay-transparent80;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  color: $bg-primary-color;
+}
+.container-title {
+  display: flex;
+  justify-content: center;
+  height: 42px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  color: $title-color;
+  margin-bottom: 50px;
+}

@@ -1,0 +1,56 @@
+.footer {
+  background: $bg-dark-color;
+  padding-top: 60px;
+}
+.box div {
+  padding-bottom: 60px;
+}
+.footer .link {
+  display: inline-block;
+  font-style: normal;
+  height: 21px;
+  line-height: 1.71;
+  margin-top: 9px;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.footer .adress-link {
+  color: $bg-primary-color;
+  margin-top: 20px;
+}
+.footer-contacts {
+  color: $white-transparent60;
+}
+.footer h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: $bg-primary-color;
+  margin-top: 12px;
+}
+.footer .social-link {
+  background-color: $white-transparent10;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.footer .social-link-icon {
+  width: 20px;
+  height: 20px;
+  fill: $bg-primary-color;
+}
+.footer .social-links-list {
+  margin-top: 20px;
+}

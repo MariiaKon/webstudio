@@ -1,0 +1,47 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding: 94px 0px;
+}
+.advantages .list-item {
+  width: 270px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages .list-item:not(:first-child) {
+  margin-left: 30px;
+}
+.advantages .list-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  width: 270px;
+  background-image: url(../images/icon/adv-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $bg-secondary-color;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+.advantages .list-item:nth-child(1)::before {
+  background-image: url(../images/icon/antenna.svg);
+}
+.advantages .list-item:nth-child(2)::before {
+  background-image: url(../images/icon/clock.svg);
+}
+.advantages .list-item:nth-child(3)::before {
+  background-image: url(../images/icon/diagram.svg);
+}
+.advantages .list-item:nth-child(4)::before {
+  background-image: url(../images/icon/astronaut.svg);
+}
+.advantages h3 {
+  margin-bottom: 10px;
+  font-weight: 700;
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: $title-color;
+}
+.advantages p {
+  line-height: 1.71;
+}

@@ -1,0 +1,20 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  height: 60px;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: $accent-color;
+}
+.logo-type1 {
+  color: $title-color;
+}
+.logo-type2 {
+  color: $bg-primary-color;
+}
+.footer .logo {
+  align-items: flex-start;
+  height: 30px;
+}
