@@ -8,14 +8,25 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container box">
+  <header class="header">
+    <div class="container box">
+        <a class="logo" href="./index.html"> Web<span class="logo logo-type1">Studio</span></a>
+        <button class="menu-btn open-menu" data-menu-open>
+            <svg width="40" height="40">
+                <use href="./images/icon/sprite/symbol-defs.svg#menu"></use>
+            </svg>
+        </button>
+        <button class="menu-btn close-menu" data-menu-close>
+            <svg width="40" height="40">
+                <use href="./images/icon/sprite/symbol-defs.svg#close-mobile"></use>
+            </svg>
+        </button>
+        <div class="menu is-hidden" data-menu>
             <nav class="nav-bar">
-                <a class="logo" href="./index.html"> Web<span class="logo logo-type1">Studio</span></a>
                 <ul class="nav">
-                    <li class="list-item"> <a class="link" href="./index.html">Студия</a></li>
-                    <li class="list-item"> <a class="link current" href="./portfolio.html">Портфолио</a> </li>
-                    <li class="list-item"> <a class="link" href="#contacts">Контакты</a></li>
+                    <li class="nav-item"> <a class="link current" href="./index.html">Студия</a></li>
+                    <li class="nav-item"> <a class="link" href="./portfolio.html">Портфолио</a> </li>
+                    <li class="nav-item"> <a class="link" href="#contacts">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="header-contacts">
@@ -35,7 +46,8 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </div>
+  </header>
 
     <main>
 
@@ -63,7 +75,7 @@
 
  <!--portfolio-container-->   
         <div class="container">
-            <h2 class="visually-hidden">Портфолио</h2>
+            <h2 class="visually-hidden container-title">Портфолио</h2>
             <ul class="portfolio-list">
                 <li class="portfolio-item">
                     <a href="" class="portfolio-link" target="_blank" rel="noopener noreferer">

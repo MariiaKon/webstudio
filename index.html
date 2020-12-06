@@ -10,12 +10,23 @@
 <body>
   <header class="header">
     <div class="container box">
+      <a class="logo" href="./index.html"> Web<span class="logo logo-type1">Studio</span></a>
+      <button class="menu-btn open-menu" data-menu-open>
+        <svg width="40" height="40">
+          <use href="./images/icon/sprite/symbol-defs.svg#menu"></use>
+        </svg>
+      </button>
+      <button class="menu-btn close-menu" data-menu-close>
+        <svg width="40" height="40">
+          <use href="./images/icon/sprite/symbol-defs.svg#close-mobile"></use>
+        </svg>
+      </button>
+      <div class="menu is-hidden" data-menu>
       <nav class="nav-bar">
-          <a class="logo" href="./index.html"> Web<span class="logo logo-type1">Studio</span></a>
           <ul class="nav">
-              <li class="list-item"> <a class="link current" href="./index.html">Студия</a></li>
-              <li class="list-item"> <a class="link" href="./portfolio.html">Портфолио</a> </li>
-              <li class="list-item"> <a class="link" href="#contacts">Контакты</a></li>
+              <li class="nav-item"> <a class="link current" href="./index.html">Студия</a></li>
+              <li class="nav-item"> <a class="link" href="./portfolio.html">Портфолио</a> </li>
+              <li class="nav-item"> <a class="link" href="#contacts">Контакты</a></li>
           </ul>
       </nav>
       <ul class="header-contacts">
@@ -33,7 +44,8 @@
                 </svg>
               +38 096 111 11 11 </a>
           </li>
-      </ul>            
+      </ul> 
+      </div>           
     </div>
   </header>
 
@@ -49,7 +61,7 @@
         <!--advantages-->
     <section>
     <div class="container">
-      <h2 class="visually-hidden">Наши преимущества</h2>
+      <h2 class="visually-hidden container-title">Наши преимущества</h2>
       <ul class="advantages">
         <li class="list-item">
             <h3>Внимание к деталям</h3>
@@ -298,7 +310,7 @@
             <a class="logo" href="./index.html"> Web<span class="logo logo-type2" >Studio</span></a>
             <address>
                 <a id="contacts"></a>
-            <ul>
+            <ul class="contacts-list">
                 <li class="list-item"> <a class="link adress-link" href="https://goo.gl/maps/uhBSgBrvWPNM5FkW8" target="_blank" rel="noopener noreferer"> г. Киев, пр-т Леси Украинки, 26 </a> </li>
                 <li class="list-item"> <a class="link footer-contacts" href="mailto:info@devstudio.com"> info@devstudio.com </a> </li>
                 <li class="list-item"> <a class="link footer-contacts" href="tel:+380961111111"> +38 096 111 11 11 </a> </li>
