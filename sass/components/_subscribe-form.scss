@@ -4,7 +4,7 @@
   justify-content: center;
 }
 .subscribe-field {
-  width: 358px;
+  width: 100%;
   height: 50px;
 
   border: $border $white-transparent30;
@@ -18,6 +18,13 @@
 
   color: $white-transparent60;
   background-color: inherit;
+
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .subscribe-field::placeholder {
   color: $white-transparent60;
