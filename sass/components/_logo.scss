@@ -4,9 +4,14 @@
   height: 60px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
   color: $accent-color;
+
+  @media screen and (min-width: 481px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo-type1 {
   color: $title-color;
@@ -17,4 +22,5 @@
 .footer .logo {
   align-items: flex-start;
   height: 30px;
+  margin-bottom: 16px;
 }

@@ -1,16 +1,21 @@
 .footer {
   background: $bg-dark-color;
-  padding-top: 60px;
+  padding: 60px 0px;
+}
+.box div:not(:last-child) {
+  padding-bottom: 60px;
 }
 .box div {
-  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .footer .link {
   display: inline-block;
   font-style: normal;
-  height: 21px;
   line-height: 1.71;
-  margin-top: 9px;
+  padding: 4px 0px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -20,9 +25,13 @@
     color: $accent-color;
   }
 }
+.contacts-list .list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .footer .adress-link {
   color: $bg-primary-color;
-  margin-top: 20px;
 }
 .footer-contacts {
   color: $white-transparent60;
@@ -34,6 +43,7 @@
   text-transform: uppercase;
   color: $bg-primary-color;
   margin-top: 12px;
+  margin-bottom: 20px;
 }
 .footer .social-link {
   background-color: $white-transparent10;
@@ -50,7 +60,4 @@
   width: 20px;
   height: 20px;
   fill: $bg-primary-color;
-}
-.footer .social-links-list {
-  margin-top: 20px;
 }

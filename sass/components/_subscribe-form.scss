@@ -1,10 +1,11 @@
 .subscribe-form {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .subscribe-field {
   width: 358px;
   height: 50px;
-  margin-top: 20px;
 
   border: $border $white-transparent30;
   box-sizing: border-box;

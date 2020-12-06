@@ -6,6 +6,13 @@ body {
   font-style: normal;
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+
+  @media screen and (min-width: 480px) and (min-width: 768px) and(min-width: 1200px) {
+    width: 100%;
+  }
 }
 html {
   box-sizing: border-box;
@@ -24,10 +31,41 @@ img {
   height: auto;
 }
 .container {
-  width: 1200px;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.container-title {
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  font-weight: 700;
+  color: $title-color;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+section {
+  padding: 60px 0px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0px;
+  }
 }
 ul,
 ol {
@@ -54,11 +92,6 @@ h6 {
 a {
   text-decoration: none;
 }
-.box {
-  display: flex;
-  justify-content: space-between;
-}
-
 :disabled {
   background-color: $text-color;
   color: $bg-primary-color;

@@ -1,14 +1,12 @@
 .clients {
-  padding: 94px 0px;
   background: $bg-primary-color;
-}
-.clients .list-item:not(:first-child) {
-  margin-left: 30px;
 }
 .clients-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  margin-bottom: -30px;
 }
 .client-item {
   max-height: 45px;
@@ -23,11 +21,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: $border $icon-primary-color;
   box-sizing: border-box;
   border-radius: 4px;
+  margin-bottom: 30px;
 
   transition-property: border;
   transition-duration: 250ms;
@@ -43,5 +42,11 @@
   &:active .client-item,
   &:focus .client-item {
     fill: $accent-color;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }

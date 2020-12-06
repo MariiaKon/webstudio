@@ -1,14 +1,13 @@
 .header {
+  position: relative;
+  height: 60px;
   background-color: $bg-primary-color;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
   border-bottom: $border #ececec;
-}
-.nav-bar,
-.nav,
-.header-contacts {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @media screen and (min-width: 481px) {
+    height: 80px;
+  }
 }

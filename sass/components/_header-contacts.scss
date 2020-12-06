@@ -1,5 +1,5 @@
 .header-contacts .link {
-  display: flex;
+  display: inline-flex;
   color: $text-color;
 
   transition-property: color;
@@ -10,9 +10,14 @@
     color: $accent-color;
   }
 }
-
+.header-contacts {
+  text-align: center;
+}
 .mail-icon,
 .tel-icon {
   fill: currentColor;
   margin-right: 10px;
+}
+.header-contacts .link {
+  padding: 8px 0px;
 }

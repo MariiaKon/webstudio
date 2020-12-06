@@ -1,7 +1,12 @@
+.manufacture {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .manufacture-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 .manufacture .list-item:not(:first-child) {
   margin-left: 30px;
@@ -25,14 +30,4 @@
   text-transform: uppercase;
 
   color: $bg-primary-color;
-}
-.container-title {
-  display: flex;
-  justify-content: center;
-  height: 42px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
-  color: $title-color;
-  margin-bottom: 50px;
 }
