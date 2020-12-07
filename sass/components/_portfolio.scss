@@ -14,8 +14,9 @@
 
 .portfolio-item {
   box-sizing: border-box;
-  width: 450px;
-  height: 404px;
+  max-width: 450px;
+  height: auto;
+  max-height: 404px;
   background: $bg-primary-color;
   border: $border #eeeeee;
   &:not(:last-child) {
@@ -38,6 +39,7 @@
     }
   }
 }
+
 .portfolio-link {
   box-sizing: content-box;
 
@@ -90,7 +92,8 @@
   box-sizing: content-box;
 
   width: 100%;
-  height: 294px;
+  height: auto;
+  max-height: 294px;
   overflow: hidden;
 }
 .portfolio-prewiew img {
@@ -108,7 +111,6 @@
   box-sizing: border-box;
 
   width: 100%;
-  height: 110px;
   padding: 20px 24px;
 
   @media screen and (min-width: 768px) {
@@ -119,7 +121,7 @@
   }
 
   & h3 {
-    display: inline-block;
+    display: block;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -129,7 +131,7 @@
   }
 }
 .portfolio-link-description {
-  display: inline-block;
+  display: block;
 
   font-weight: 400;
   font-size: 16px;
