@@ -396,9 +396,10 @@ a {
   line-height: 16px;
   letter-spacing: 0.02em;
   border-bottom: 1px solid #ececec;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .header {
     height: 80px;
   }
