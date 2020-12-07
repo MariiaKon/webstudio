@@ -1,8 +1,16 @@
 .filter-btn-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+
+  & .list-item {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 15px;
+    align-items: center;
+  }
 }
-.filter-btn-list .list-item:not(:first-child) {
-  margin-left: 8px;
+.filter-btn {
+  margin-bottom: 15px;
 }
