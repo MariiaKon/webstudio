@@ -114,8 +114,9 @@
   width: 40px;
   height: 40px;
   padding: 0;
+  margin: 0;
   border: none;
-  background: inherit;
+  background: transparent;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -125,6 +126,18 @@
   &:focus,
   &:active {
     fill: $accent-color;
+  }
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
   }
 
   @media screen and (min-width: 768px) {

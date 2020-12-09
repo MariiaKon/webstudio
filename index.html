@@ -11,17 +11,15 @@
   <header class="header">
     <div class="container box">
       <a class="logo" href="./index.html"> Web<span class="logo logo-type1">Studio</span></a>
-      <button type="button" class="menu-btn open-menu" data-menu-open>
-        <svg width="40" height="40">
-          <use href="./images/icon/sprite/symbol-defs.svg#menu"></use>
+
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" data-menu-btn>
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use class="icon-menu" href="./images/icon/sprite/symbol-defs.svg#menu"></use>
+          <use class="icon-close" href="./images/icon/sprite/symbol-defs.svg#close-mobile"></use>
         </svg>
       </button>
-      <button type="button" class="menu-btn close-menu" data-menu-close>
-        <svg width="40" height="40">
-          <use href="./images/icon/sprite/symbol-defs.svg#close-mobile"></use>
-        </svg>
-      </button>
-      <div class="menu is-hidden" data-menu>
+      
+      <div class="menu" id="menu" data-menu>
       <nav class="nav-bar">
           <ul class="nav">
               <li class="nav-item"> <a class="link current" href="./index.html">Студия</a></li>

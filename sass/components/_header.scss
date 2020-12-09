@@ -3,11 +3,19 @@
   height: 60px;
   background-color: $bg-primary-color;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 1.143;
   letter-spacing: 0.02em;
   border-bottom: $border #ececec;
 
   @media screen and (min-width: 768px) {
     height: 80px;
+  }
+}
+
+.header .box {
+  position: relative;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }

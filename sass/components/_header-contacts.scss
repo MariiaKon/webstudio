@@ -2,6 +2,8 @@
   display: inline-flex;
   color: $text-color;
 
+  padding: 8px 0px;
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: linear;
@@ -9,15 +11,21 @@
   &:focus {
     color: $accent-color;
   }
+
+  @media screen and (min-width: 768px) {
+    margin: auto 0px;
+    padding: 5px 0px;
+  }
 }
 .header-contacts {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .mail-icon,
 .tel-icon {
   fill: currentColor;
   margin-right: 10px;
-}
-.header-contacts .link {
-  padding: 8px 0px;
 }
