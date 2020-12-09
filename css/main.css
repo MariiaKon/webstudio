@@ -712,7 +712,6 @@ a {
 }
 
 .hero-title {
-  max-width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -723,6 +722,12 @@ a {
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-title {
+    max-width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
