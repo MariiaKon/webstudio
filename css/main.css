@@ -1519,9 +1519,12 @@ a {
 @media screen and (min-width: 768px) {
   .filter-btn-list {
     margin-bottom: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1577,8 +1580,8 @@ a {
   .portfolio-item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
-  .portfolio-item:nth-child(2n + 2) {
-    margin-right: 0px;
+  .portfolio-item:nth-child(2n + 1) {
+    margin-right: 30px;
   }
 }
 
