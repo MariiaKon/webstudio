@@ -2,6 +2,13 @@
   background: $bg-dark-color;
   padding: 60px 0px;
 }
+.footer .box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 .box div:not(:last-child) {
   padding-bottom: 60px;
 }
@@ -10,6 +17,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
 }
 .footer .link {
   display: inline-block;

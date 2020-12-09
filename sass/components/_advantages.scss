@@ -51,13 +51,19 @@
   background-image: url(../images/icon/astronaut.svg);
 }
 .advantages h3 {
+  font-size: 14px;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
   color: $title-color;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .advantages p {
+  font-size: 14px;
   line-height: 1.71;
 }
