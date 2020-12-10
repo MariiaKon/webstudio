@@ -1,5 +1,6 @@
 .header-contacts .link {
   display: inline-flex;
+  align-items: center;
   color: $text-color;
 
   padding: 8px 0px;
@@ -18,14 +19,42 @@
   }
 }
 .header-contacts {
+  font-size: 18px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
+    font-size: 12px;
     text-align: left;
+    display: inline-flex;
+    flex-direction: column;
   }
 }
 .mail-icon,
 .tel-icon {
   fill: currentColor;
   margin-right: 10px;
+}
+.mail-icon {
+  @media screen and (max-width: 767px) and (min-width: 1200px) {
+    width: 18px;
+    height: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 16px;
+    height: 14px;
+  }
+}
+
+.tel-icon {
+  width: 16px;
+  height: 18px;
+
+  @media screen and (min-width: 768px) {
+    width: 15px;
+    height: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 16px;
+    height: 20px;
+  }
 }

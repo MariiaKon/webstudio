@@ -420,6 +420,10 @@ a {
   }
 }
 
+.header .box div {
+  margin: 0;
+}
+
 .menu {
   position: absolute;
   height: 393px;
@@ -439,15 +443,25 @@ a {
 
 @media screen and (min-width: 768px) {
   .menu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 80px;
-    background: #ffffff;
-    display: flex;
+    position: relative;
+    top: 0;
+    -webkit-transform: none;
+            transform: none;
+    width: 607px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -514,7 +528,7 @@ a {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
@@ -561,6 +575,7 @@ a {
 }
 
 .nav-bar {
+  font-size: 18px;
   margin-top: -20px;
   margin-bottom: 40px;
   text-align: center;
@@ -568,6 +583,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .nav-bar {
+    font-size: 14px;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -575,10 +591,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: 0;
+    margin: 0 0 0 84px;
   }
 }
 
@@ -609,7 +622,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .nav .current::after {
-    margin-top: 32px;
+    margin-top: 30px;
   }
 }
 
@@ -627,6 +640,9 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #757575;
   padding: 8px 0px;
   -webkit-transition-property: color;
@@ -649,12 +665,21 @@ a {
 }
 
 .header-contacts {
+  font-size: 18px;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   .header-contacts {
+    font-size: 12px;
     text-align: left;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -662,6 +687,39 @@ a {
 .tel-icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 1200px) {
+  .mail-icon {
+    width: 18px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mail-icon {
+    width: 16px;
+    height: 14px;
+  }
+}
+
+.tel-icon {
+  width: 16px;
+  height: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .tel-icon {
+    width: 15px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tel-icon {
+    width: 16px;
+    height: 20px;
+  }
 }
 
 .hero-section {
@@ -1521,16 +1579,23 @@ a {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: -15px;
 }
 
 .filter-btn-list .list-item {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-btn-list .list-item {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .filter-btn-list {
-    margin-bottom: 15px;
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1540,13 +1605,20 @@ a {
   }
 }
 
-.filter-btn {
-  margin-bottom: 15px;
+.filter-container {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-container {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-list {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1579,18 +1651,12 @@ a {
   max-height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-}
-
-.portfolio-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-item {
     width: 354px;
-  }
-  .portfolio-item:nth-last-child(-n + 2) {
-    margin-bottom: 0;
   }
   .portfolio-item:nth-child(2n + 1) {
     margin-right: 30px;
@@ -1769,7 +1835,7 @@ a {
   padding-bottom: 60px;
 }
 
-.box div {
+.footer .box div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1789,7 +1855,7 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .box div {
+  .footer .box div {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;

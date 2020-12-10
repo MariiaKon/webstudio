@@ -19,15 +19,16 @@
   }
 }
 .nav-bar {
+  font-size: 18px;
   margin-top: -20px;
   margin-bottom: 40px;
   text-align: center;
 
   @media screen and (min-width: 768px) {
+    font-size: 14px;
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
+    margin: 0 0 0 84px;
   }
 }
 .nav-item {
@@ -52,7 +53,7 @@
     border-radius: 2px;
 
     @media screen and (min-width: 768px) {
-      margin-top: 32px;
+      margin-top: 30px;
     }
   }
 }
