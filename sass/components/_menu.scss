@@ -16,7 +16,7 @@
     position: relative;
     top: 0;
     transform: none;
-    width: 607px;
+    flex-grow: 1;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -24,9 +24,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1025px;
   }
 }
 .menu.is-open {

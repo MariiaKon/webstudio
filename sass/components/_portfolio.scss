@@ -65,6 +65,12 @@
     transition-property: border;
     transition-duration: 250ms;
     transition-timing-function: linear;
+
+    &:hover img,
+    &:active img,
+    &:focus img {
+      width: 100%;
+    }
   }
 
   .portfolio-overlay {
@@ -113,7 +119,7 @@
   overflow: hidden;
 }
 .portfolio-prewiew img {
-  width: 100%;
+  width: calc(100% - 2px);
   max-height: 294px;
 
   @media screen and (min-width: 768px) {

@@ -279,6 +279,10 @@ body {
   }
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -292,7 +296,6 @@ html {
   text-decoration: none;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
 }
 
 img {
@@ -448,7 +451,9 @@ a {
     top: 0;
     -webkit-transform: none;
             transform: none;
-    width: 607px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -463,12 +468,6 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .menu {
-    width: 1025px;
   }
 }
 
@@ -635,7 +634,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .nav .current::after {
-    margin-top: 30px;
+    margin-top: 28px;
   }
 }
 
@@ -746,14 +745,7 @@ a {
 @media screen and (min-width: 768px) {
   .tel-icon {
     width: 14px;
-    height: 18px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .tel-icon {
-    width: 16px;
-    height: 20px;
+    height: 16px;
   }
 }
 
@@ -1008,7 +1000,7 @@ a {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1033,7 +1025,8 @@ a {
   height: 609px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 90px;
+  margin-top: 95px;
+  margin-bottom: 95px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1045,6 +1038,20 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (orientation: landscape) {
+  .modal {
+    margin-top: 200px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .modal {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .modal {
     max-width: 450px;
@@ -1053,7 +1060,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .modal {
-    margin-top: 0;
+    margin: 0;
   }
 }
 
@@ -1205,13 +1212,14 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 105%;
+  width: 104%;
   margin-bottom: 30px;
-  padding-left: 36px;
+  padding-left: 31px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
   color: #757575;
 }
 
@@ -1220,6 +1228,18 @@ a {
     font-size: 14px;
     line-height: 1.71;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .checkbox-description {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 469px) {
+  .checkbox-description {
+    text-align: left;
   }
 }
 
@@ -1765,6 +1785,16 @@ a {
           transition-timing-function: linear;
 }
 
+.portfolio-link:hover:hover img,
+.portfolio-link:hover:active img,
+.portfolio-link:hover:focus img, .portfolio-link:focus:hover img,
+.portfolio-link:focus:active img,
+.portfolio-link:focus:focus img, .portfolio-link:active:hover img,
+.portfolio-link:active:active img,
+.portfolio-link:active:focus img {
+  width: 100%;
+}
+
 .portfolio-link .portfolio-overlay {
   position: absolute;
   top: 0;
@@ -1828,7 +1858,7 @@ a {
 }
 
 .portfolio-prewiew img {
-  width: 100%;
+  width: calc(100% - 2px);
   max-height: 294px;
 }
 

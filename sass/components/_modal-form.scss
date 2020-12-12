@@ -96,21 +96,27 @@
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
-  width: 105%;
+  width: 104%;
   margin-bottom: 30px;
-  padding-left: 36px;
+  padding-left: 31px;
 
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-
+  text-align: center;
   color: $text-color;
 
   @media screen and(min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
     width: 100%;
+  }
+  @media screen and (max-width: 415px) {
+    font-size: 11px;
+  }
+  @media screen and (max-width: 469px) {
+    text-align: left;
   }
 }
 .checkbox-description a {
