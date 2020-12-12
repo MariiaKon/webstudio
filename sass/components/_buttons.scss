@@ -127,10 +127,12 @@
   transition-duration: 250ms;
   transition-timing-function: linear;
 
-  &:hover,
   &:focus,
   &:active {
     fill: $accent-color;
+  }
+  &:visited {
+    fill: $title-color;
   }
 
   & .icon-close {

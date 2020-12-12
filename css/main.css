@@ -971,8 +971,12 @@ a {
           transition-timing-function: linear;
 }
 
-.menu-btn:hover, .menu-btn:focus, .menu-btn:active {
+.menu-btn:focus, .menu-btn:active {
   fill: #2196f3;
+}
+
+.menu-btn:visited {
+  fill: #212121;
 }
 
 .menu-btn .icon-close {
@@ -1304,7 +1308,7 @@ a {
 }
 
 .advantages {
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1321,17 +1325,12 @@ a {
   max-width: 450px;
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages .list-item {
     max-width: 354px;
-  }
-  .advantages .list-item:nth-child(2n + 1) {
-    margin-right: 30px;
   }
 }
 
@@ -1409,10 +1408,11 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: -15px;
 }
 
-.manufacture .list-item:not(:first-child) {
-  margin-left: 30px;
+.manufacture .list-item {
+  margin: 15px;
 }
 
 .manufacture-card {
@@ -1448,6 +1448,10 @@ a {
   text-align: center;
 }
 
+.team-list {
+  margin: -15px;
+}
+
 @media screen and (min-width: 768px) {
   .team-list {
     display: -webkit-box;
@@ -1455,7 +1459,6 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: -30px;
   }
 }
 
@@ -1466,15 +1469,12 @@ a {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .card {
     width: 354px;
-  }
-  .card:nth-child(2n + 1) {
-    margin-right: 30px;
   }
 }
 
@@ -1482,9 +1482,6 @@ a {
   .card {
     width: 270px;
     padding-bottom: 30px;
-  }
-  .card:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -1578,18 +1575,11 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: -30px;
-  margin-right: -15px;
-  margin-left: -15px;
-  /*@media screen and (min-width: 480px) {
-    justify-content: space-between;
-  }*/
+  margin: -15px;
 }
 
 .clients-list .list-item {
-  margin-right: 15px;
-  margin-left: 15px;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 .client-item {
@@ -1693,9 +1683,7 @@ a {
 }
 
 .portfolio-list {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1728,15 +1716,12 @@ a {
   height: 404px;
   background: #ffffff;
   border: 1px solid #eeeeee;
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-item {
     width: 354px;
-  }
-  .portfolio-item:nth-child(2n + 1) {
-    margin-right: 30px;
   }
   .portfolio-item:nth-child(2) {
     height: 440px;
