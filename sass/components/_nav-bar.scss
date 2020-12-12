@@ -30,6 +30,9 @@
     flex-direction: row;
     margin: 0 0 0 84px;
   }
+  @media screen and (min-width: 1200px) {
+    margin: 0 0 0 94px;
+  }
 }
 .nav-item {
   @media screen and (min-width: 768px) {

@@ -13,6 +13,7 @@
   & .list-item {
     margin-right: 15px;
     margin-left: 15px;
+    margin-bottom: 30px;
   }
   /*@media screen and (min-width: 480px) {
     justify-content: space-between;
@@ -36,7 +37,6 @@
   border: $border $icon-primary-color;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 30px;
 
   transition-property: border;
   transition-duration: 250ms;
@@ -58,9 +58,5 @@
   }
   @media screen and (min-width: 1200px) {
     width: 170px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }

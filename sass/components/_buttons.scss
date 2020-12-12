@@ -36,6 +36,11 @@
 .subscribe {
   padding: 10px 29px;
   margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 .subscribe-btn-icon {
   width: 24px;

@@ -466,6 +466,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .menu {
+    width: 1025px;
+  }
+}
+
 .menu.is-open {
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -596,6 +602,12 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .nav-bar {
+    margin: 0 0 0 94px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .nav-item {
     display: inline;
@@ -665,6 +677,18 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-contacts .link {
+    padding: 32px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts .list-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .header-contacts {
   font-size: 18px;
   text-align: center;
@@ -681,6 +705,16 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    font-size: 14px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -783,7 +817,7 @@ a {
   margin-left: auto;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
   .hero-title {
     max-width: 360px;
   }
@@ -841,6 +875,13 @@ a {
 .subscribe {
   padding: 10px 29px;
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-top: 0;
+    margin-left: 12px;
+  }
 }
 
 .subscribe-btn-icon {
@@ -989,7 +1030,6 @@ a {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   width: calc(100% - 30px);
-  max-width: 450px;
   height: 609px;
   margin-left: auto;
   margin-right: auto;
@@ -1003,6 +1043,18 @@ a {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    margin-top: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1026,12 +1078,17 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 370px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form {
+    max-width: 370px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1162,6 +1219,7 @@ a {
   .checkbox-description {
     font-size: 14px;
     line-height: 1.71;
+    width: 100%;
   }
 }
 
@@ -1225,6 +1283,10 @@ a {
   transition-property: border;
 }
 
+.advantages {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .advantages {
     display: -webkit-box;
@@ -1241,9 +1303,10 @@ a {
   background-position: center;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages .list-item {
     max-width: 354px;
   }
@@ -1256,10 +1319,6 @@ a {
   .advantages .list-item {
     max-width: 270px;
   }
-}
-
-.advantages .list-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .advantages .list-item::before {
@@ -1312,9 +1371,14 @@ a {
   line-height: 1.71;
 }
 
-@media screen and (max-width: 1200px) {
+.manufacture {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
   .manufacture {
-    display: none;
+    display: block;
+    padding-top: 0;
   }
 }
 
@@ -1371,16 +1435,7 @@ a {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-.team-list .card:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .team-list .card:nth-last-child(-n + 2) {
-    margin-bottom: 0;
+    margin-bottom: -30px;
   }
 }
 
@@ -1391,6 +1446,7 @@ a {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1406,6 +1462,9 @@ a {
   .card {
     width: 270px;
     padding-bottom: 30px;
+  }
+  .card:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1510,6 +1569,7 @@ a {
 .clients-list .list-item {
   margin-right: 15px;
   margin-left: 15px;
+  margin-bottom: 30px;
 }
 
 .client-item {
@@ -1540,7 +1600,6 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  margin-bottom: 30px;
   -webkit-transition-property: border;
   transition-property: border;
   -webkit-transition-duration: 250ms;
@@ -1568,9 +1627,6 @@ a {
 @media screen and (min-width: 1200px) {
   .client-site {
     width: 170px;
-  }
-  .client-site:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -1655,7 +1711,7 @@ a {
   margin-bottom: 30px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-item {
     width: 354px;
   }
@@ -1845,6 +1901,14 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .box div:not(:last-child) {
   padding-bottom: 60px;
 }
@@ -1876,6 +1940,19 @@ a {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .box div {
+    padding: 0;
+    margin: 0;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
 .footer .link {
   display: inline-block;
   font-style: normal;
@@ -1904,6 +1981,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list .list-item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .footer .adress-link {

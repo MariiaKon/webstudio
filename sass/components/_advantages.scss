@@ -1,4 +1,6 @@
 .advantages {
+  margin-bottom: -30px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -10,8 +12,9 @@
   background-position: center;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 30px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 354px;
 
     &:nth-child(2n + 1) {
@@ -22,9 +25,6 @@
   @media screen and (min-width: 1200px) {
     max-width: 270px;
   }
-}
-.advantages .list-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 .advantages .list-item::before {
   display: block;

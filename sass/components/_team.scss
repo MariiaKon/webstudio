@@ -9,14 +9,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-.team-list .card:not(:last-child) {
-  margin-bottom: 30px;
-}
-.team-list .card:nth-last-child(-n + 2) {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: -30px;
   }
 }
 
@@ -27,6 +20,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     width: 354px;
@@ -38,6 +32,10 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
     padding-bottom: 30px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .card img {
