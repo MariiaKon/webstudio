@@ -11,7 +11,7 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 577px) and (max-width: 959px) {
     background-image: linear-gradient(
         90deg,
         $overlay-transparent40,
@@ -19,7 +19,7 @@
       ),
       url(../images/hero/hero-bg-tablet.webp);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 960px) {
     background-image: linear-gradient(
         90deg,
         $overlay-transparent40,
@@ -44,7 +44,7 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 577px) and (max-width: 959px) {
       background-image: linear-gradient(
           90deg,
           $overlay-transparent40,
@@ -52,7 +52,7 @@
         ),
         url(../images/hero/hero-bg-tablet@2x.webp);
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 960px) {
       background-image: linear-gradient(
           90deg,
           $overlay-transparent40,
