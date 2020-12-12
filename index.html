@@ -88,7 +88,14 @@
       <ul class="manufacture-list">
         <li class="list-item">
             <div class="manufacture-card">
-            <img src="./images/img1.webp" alt="Десктопные приложения" width="370" height="294">
+            <picture>
+              <source srcset="
+              ./images/manufacture/img1.webp 1x, 
+              ./images/manufacture/img1@2x.webp 2x" 
+              type="image/webp" />
+            <img src="./images/manufacture/img1.jpg" 
+            alt="Десктопные приложения" width="370" height="294" />
+            </picture>
               <div class="manufacture-overlay">
               <p>Десктопные приложения</p>
               </div>
@@ -96,7 +103,14 @@
         </li>
         <li class="list-item">
             <div class="manufacture-card">
-            <img src="./images/img2.webp" alt="Мобильные приложения" width="370" height="294">
+            <picture>
+              <source srcset="
+              ./images/manufacture/img2.webp 1x, 
+              ./images/manufacture/img2@2x.webp 2x" 
+              type="image/webp" />
+            <img src="./images/manufacture/img2.jpg" 
+            alt="Мобильные приложения" width="370" height="294" />
+            </picture>
               <div class="manufacture-overlay">
               <p>Мобильные приложения</p>
               </div>
@@ -104,7 +118,14 @@
         </li>
         <li class="list-item">
             <div class="manufacture-card">
-            <img src="./images/img3.webp" alt="Дизайнерские решения" width="370" height="294">
+            <picture>
+              <source srcset="
+              ./images/manufacture/img3.webp 1x, 
+              ./images/manufacture/img3@2x.webp 2x" 
+              type="image/webp" />
+            <img src="./images/manufacture/img3.jpg" 
+            alt="Дизайнерские решения" width="370" height="294" />
+            </picture>
               <div class="manufacture-overlay">
               <p>Дизайнерские решения</p>
               </div>
@@ -120,7 +141,19 @@
       <h2 class="container-title">Наша команда</h2>
         <ul class="team-list">
           <li class="list-item card">
-               <img src="./images/team/igor-demianenko.webp" alt="igor-demianenko-photo" width="270" height="260">
+            <picture>
+              <source srcset="
+              ./images/team/igor-demianenko.webp 1x,
+              ./images/team/igor-demianenko@2x.webp 2x"
+              type="image/webp" />
+              <img srcset="
+              ./images/team/igor-demianenko.jpg 1x,
+              ./images/team/igor-demianenko@2x.jpg 2x"
+              type="image/jpg"
+              src="./images/team/igor-demianenko.jpg"
+              alt="igor-demianenko-photo" width="270" height="260" />
+            </picture>
+            <div class="team-description">
                <h3>Игорь Демьяненко</h3>
                <p lang="en">Product Designer</p>
                <ul class="social-links-list">
@@ -153,9 +186,22 @@
                         </a>
                     </li>
                </ul>
+            </div>
           </li>
           <li class="list-item card">
-               <img src="./images/team/olga-repina.webp" alt="olga-repina-photo" width="270" height="260">
+            <picture>
+              <source srcset="
+              ./images/team/olga-repina.webp 1x,
+              ./images/team/olga-repina@2x.webp 2x"
+              type="image/webp" />
+               <img srcset="
+              ./images/team/olga-repina.jpg 1x,
+              ./images/team/olga-repina@2x.jpg 2x"
+              type="image/jpg"
+              src="./images/team/olga-repina.jpg"
+              alt="olga-repina-photo" width="270" height="260" />
+            </picture>
+            <div class="team-description">
                <h3>Ольга Репина</h3>
                <p lang="en">Frontend Developer</p>
                <ul class="social-links-list">
@@ -188,9 +234,22 @@
                         </a>
                     </li>
                </ul>
+            </div>
           </li>
           <li class="list-item card">
-               <img src="./images/team/nikolai-tarasov.webp" alt="nikolai-tarasov-photo" width="270" height="260">
+            <picture>
+              <source srcset="
+              ./images/team/nikolai-tarasov.webp 1x,
+              ./images/team/nikolai-tarasov@2x.webp 2x"
+              type="image/webp" />
+              <img srcset="
+              ./images/team/nikolai-tarasov.jpg 1x,
+              ./images/team/nikolai-tarasov@2x.jpg 2x"
+              type="image/jpg"
+              src="./images/team/nikolai-tarasov.jpg"
+              alt="nikolai-tarasov-photo" width="270" height="260" />
+            </picture>
+            <div class="team-description">
                <h3 >Николай Тарасов</h3>
                <p lang="en">Marketing</p>
                <ul class="social-links-list">
@@ -223,9 +282,22 @@
                         </a>
                     </li>
                </ul>
+            </div>
           </li>
           <li class="list-item card">
-               <img src="./images/team/michail-ermakov.webp" alt="michail-ermakov-photo" width="270" height="260">
+            <picture>
+              <source srcset="
+              ./images/team/michail-ermakov.webp 1x,
+              ./images/team/michail-ermakov@2x.webp 2x"
+              type="image/webp" />
+              <img srcset="
+              ./images/team/michail-ermakov.jpg 1x,
+              ./images/team/michail-ermakov@2x.jpg 2x"
+              type="image/jpg"
+              src="./images/team/michail-ermakov.jpg"
+              alt="michail-ermakov-photo" width="270" height="260" />
+            </picture>
+            <div class="team-description">
                <h3>Михаил Ермаков</h3>
                <p lang="en">UI Designer</p>
                <ul class="social-links-list">
@@ -258,6 +330,7 @@
                         </a>
                     </li>
                </ul>
+            </div>
           </li>
         </ul>
     </div>
