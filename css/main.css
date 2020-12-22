@@ -1626,6 +1626,21 @@ a {
 
 .clients-list .list-item {
   margin: 15px;
+  width: calc((100% - 60px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list .list-item {
+    width: calc((100vw - 90px) / 3);
+    max-width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list .list-item {
+    width: calc((100vw - 180px) / 6);
+    max-width: 170px;
+  }
 }
 
 .client-item {
@@ -1650,7 +1665,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -1676,13 +1691,15 @@ a {
 
 @media screen and (min-width: 768px) {
   .client-site {
-    width: 226px;
+    width: calc((100vw - 90px) / 3);
+    max-width: 226px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .client-site {
-    width: 170px;
+    width: calc((100vw - 180px) / 6);
+    max-width: 170px;
   }
 }
 

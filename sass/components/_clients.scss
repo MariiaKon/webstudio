@@ -10,6 +10,16 @@
 
   & .list-item {
     margin: 15px;
+    width: calc((100% - 60px) / 2);
+
+    @media screen and (min-width: 768px) {
+      width: calc((100vw - 90px) / 3);
+      max-width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100vw - 180px) / 6);
+      max-width: 170px;
+    }
   }
 }
 .client-item {
@@ -25,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   border: $border $icon-primary-color;
   box-sizing: border-box;
@@ -47,9 +57,11 @@
     fill: $accent-color;
   }
   @media screen and (min-width: 768px) {
-    width: 226px;
+    width: calc((100vw - 90px) / 3);
+    max-width: 226px;
   }
   @media screen and (min-width: 1200px) {
-    width: 170px;
+    width: calc((100vw - 180px) / 6);
+    max-width: 170px;
   }
 }
