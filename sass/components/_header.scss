@@ -13,9 +13,14 @@
 }
 
 .header .box {
-  position: relative;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    position: static;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    position: relative;
     align-items: center;
   }
 }

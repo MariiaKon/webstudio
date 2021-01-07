@@ -409,15 +409,24 @@ a {
   }
 }
 
-.header .box {
-  position: relative;
+@media screen and (max-width: 767px) {
+  .header .box {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .header .box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    position: relative;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -978,10 +987,6 @@ a {
 }
 
 .menu-btn {
-  position: absolute;
-  top: 10px;
-  bottom: 10px;
-  right: 15px;
   width: 40px;
   height: 40px;
   padding: 0;
