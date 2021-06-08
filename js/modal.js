@@ -16,7 +16,7 @@
 
 
 
-// const submitBtn = document.querySelector('.submit-modal');
+const submitBtn = document.querySelector('.submit-modal');
 const checkbox = document.querySelector('.checkbox');
 
 // submitBtn.addEventListener('click', onFormSubmit);
