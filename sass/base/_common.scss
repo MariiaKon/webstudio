@@ -1,89 +1,89 @@
 body {
-  background: $bg-primary-color;
-  color: $text-color;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 320px;
+	background: $bg-primary-color;
+	color: $text-color;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 320px;
 
-  @media screen and (min-width: 480px) and (min-width: 768px) and(min-width: 1200px) {
-    width: 100%;
-  }
+	@media screen and (min-width: 480px) and (min-width: 768px) and(min-width: 1200px) {
+		width: 100%;
+	}
 }
 body.modal-open {
-  overflow: hidden;
+	overflow: hidden;
 }
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
+	box-sizing: inherit;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
 }
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
 }
 .container {
-  padding: 0px 15px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
+	padding: 0px 15px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+	@media screen and (min-width: 480px) {
+		width: 480px;
+	}
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
+	@media screen and (min-width: 768px) {
+		width: 768px;
+	}
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+	@media screen and (min-width: 1200px) {
+		width: 1200px;
+	}
 }
 .container-title {
-  font-size: 28px;
-  line-height: 1.17;
-  text-align: center;
-  font-weight: 700;
-  color: $title-color;
-  margin-bottom: 30px;
+	font-size: 28px;
+	line-height: 1.17;
+	text-align: center;
+	font-weight: 700;
+	color: $title-color;
+	margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
-    font-size: 36px;
-    margin-bottom: 50px;
-  }
+	@media screen and (min-width: 1200px) {
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
 }
 section {
-  padding: 60px 0px;
+	padding: 60px 0px;
 
-  @media screen and (min-width: 1200px) {
-    padding: 94px 0px;
-  }
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0px;
+	}
 }
 ul,
 ol {
-  list-style: none;
+	list-style: none;
 }
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0 !important;
+	border: 0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
 }
 h1,
 h2,
@@ -91,15 +91,12 @@ h3,
 h4,
 h5,
 h6 {
-  color: $title-color;
+	color: $title-color;
 }
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
-:disabled {
-  background-color: $text-color;
-  color: $bg-primary-color;
-}
+
 :active {
-  outline: none;
+	outline: none;
 }

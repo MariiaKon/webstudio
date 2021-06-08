@@ -384,11 +384,6 @@ a {
   text-decoration: none;
 }
 
-:disabled {
-  background-color: #757575;
-  color: #ffffff;
-}
-
 :active {
   outline: none;
 }
@@ -923,6 +918,11 @@ a {
 
 .submit-modal:hover, .submit-modal:active, .submit-modal:focus {
   background-color: #0f79cf;
+  color: #ffffff;
+}
+
+.submit-modal:disabled {
+  background-color: #757575;
   color: #ffffff;
 }
 
